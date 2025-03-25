@@ -49,7 +49,7 @@ func parsePackage(data string) (int, time.Duration, error) {
 // Если пакет валидный, он добавляется в слайс storage, который возвращает
 // функция. Если пакет невалидный, storage возвращается без изменений.
 func DayActionInfo(data string, weight, height float64) string {
-	func DayActionInfo(data string, weight, height float64) string {
+
 		steps, duration, err := parsePackage(data) // Получаем данные из строки
 		if err != nil {
 			fmt.Println(err)
@@ -67,4 +67,4 @@ func DayActionInfo(data string, weight, height float64) string {
 		return fmt.Sprintf("Количество шагов: %d.\nДистанция составила %.2f км.\nВы сожгли %.2f ккал.", steps, distanceKilometers, calories)
 	}
 	
-}
+
